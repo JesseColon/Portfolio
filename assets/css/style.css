@@ -36,10 +36,19 @@ header div ul {
   display: inline-block;
   margin-left: 25px;
 }
+.banner {
+  height: 420px;
+  width: 100%;
+  margin-bottom: 25px;
+  background-image: url("../images/Generic_f5246ce9-ed96-4adb-8a0c-2fb67fd8c0bf.webp");
+  background-size: cover;
+  background-position: center;
+}
 main {
 display: flex;
 flex-wrap: wrap;
 }
+
 main content {
   padding: 15px;
   background-clip: border-box;
@@ -69,5 +78,4 @@ footer {
 }
 footer content ul li {
   font-size: 15px;
-  
 }
