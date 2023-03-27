@@ -54,7 +54,7 @@ main content {
   background-clip: border-box;
 }
 
-.about-me, .my-content, .no-clue, .my-projects, .IDK {
+#about-me, #my-content, #no-clue, #my-projects, #IDK {
   display: flex;
   flex-direction: column;
   height: 200px;
@@ -71,11 +71,17 @@ background-color: var(--purple);
 }
 
 footer {
-  display: inline-block;
+  
   background-color: var(--purple);
   color: var(--white);
   text-align: center;
+  padding-top: 15px;
 }
+  
+
 footer content ul li {
+  display: flex;
+  flex-direction: column;
   font-size: 15px;
+  padding: 15px;
 }
