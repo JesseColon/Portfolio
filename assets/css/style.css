@@ -1,15 +1,21 @@
 :root {
   --white: #fff;
   --black: #060101 ; 
-  --purple: #2d0d35;
+  --purple: #160F29;
+  --current: #246A73;
+  --champagne: #F3DFC1;
 }
 
+* {
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
   justify-content: flex-start;
+  background-color: var(--champagne)
 }
 
 h1 {
@@ -24,6 +30,9 @@ header {
   background: var(--purple);
   color: var(--white);
 
+}
+header h1 {
+  text-align: left;
 }
 
 header div ul {
@@ -44,17 +53,48 @@ header div ul {
   background-size: cover;
   background-position: center;
 }
+
+.banner h3{
+  display: inline-flex;
+  float: right;
+  height: 420px;
+  width: 75%;
+  margin-top: 30px;
+}
 main {
 display: flex;
 flex-wrap: wrap;
+width: 70%;
 }
 
 main content {
   padding: 15px;
   background-clip: border-box;
+  float: left;
 }
 
-#about-me, #my-content, #no-clue, #my-projects, #IDK {
+#about-me {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+}
+
+#main-project {
+  display: flex;
+  flex-direction: column;
+  height: 400px;
+  width: 100%;
+}
+
+#main-project a {
+  display: flex;
+  background-image: url("../images/preworkstudyguide.PNG");
+  height: 300px;
+  width: 100%;
+}
+
+#example1, #example2, #example3, #example4 {
   display: flex;
   flex-direction: column;
   height: 200px;
