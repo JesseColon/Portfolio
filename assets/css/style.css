@@ -1,21 +1,22 @@
 :root {
   --white: #fff;
-  --black: #060101 ; 
-  --purple: #160F29;
+  --black: #0f0e0ee8 ; 
+  --headers: #0A2463;
   --current: #246A73;
   --champagne: #F3DFC1;
 }
 
 * {
   box-sizing: border-box;
+  margin:0;
+  padding:0;
 }
 body {
   font-size: 16px;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
-  justify-content: flex-start;
-  background-color: var(--champagne)
+  background-color: var(--black)
 }
 
 h1 {
@@ -27,21 +28,26 @@ h1 {
 header {
   padding: 40px;
   text-align: center;
-  background: var(--purple);
+  background: var(--headers);
   color: var(--white);
 
 }
 header h1 {
   text-align: left;
 }
+/* header ul {
+  display: flex;
+  flex-direction: column;
+} */
 
 header div ul {
   display: flex;
   color: var(--white);
   float: right;
+  
 }
 
-.header div ul li {
+.header div ul a {
   display: inline-block;
   margin-left: 25px;
 }
@@ -49,70 +55,100 @@ header div ul {
   height: 420px;
   width: 100%;
   margin-bottom: 25px;
-  background-image: url("../images/Generic_f5246ce9-ed96-4adb-8a0c-2fb67fd8c0bf.webp");
+  background-image: url("../images/pxfuel.jpg");
   background-size: cover;
   background-position: center;
 }
 
 .banner h3{
-  display: inline-flex;
+  display:flex;
   float: right;
-  height: 420px;
-  width: 75%;
+  height: 40px;
+  width: 75px;
   margin-top: 30px;
+  margin-right: 550px;
+  color: var(--white);
+  /* background-color: var(--headers); */
+}
+
+.banner p {
+  display: flex;
+  float: right;
+  width: 60%;
+  max-height: fit-content;
+  margin-left: 400px;
+  color: var(--white);
+
 }
 main {
-display: flex;
-flex-wrap: wrap;
-width: 70%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  width: 80%;
+  margin-left: 15%;
+  margin-right: 15%;
 }
 
-main content {
+main content ul {
+  display: flex;
+  flex-direction: row;
+}
+main content ul li {
   padding: 15px;
-  background-clip: border-box;
-  float: left;
+  height: 100px;
+  width: 70%;
 }
 
-#about-me {
+main ul li p {
+  height: 200px;
+  width: 100;
+  background-color: var(--current);
+}
+
+main div ul #main-project {
   display: flex;
   flex-direction: column;
   height: 400px;
   width: 100%;
+  clear: both;
+  margin: bottom 40px;
 }
 
-#main-project {
-  display: flex;
-  flex-direction: column;
+main div ul #main-project a {
   height: 400px;
-  width: 100%;
-}
-
-#main-project a {
-  display: flex;
-  background-image: url("../images/preworkstudyguide.PNG");
+  background: transparent no-repeat center;
+  background-size: cover;
+  /* background-image: url("../images/preworkstudyguide.PNG");
   height: 300px;
-  width: 100%;
+  width: 100%; */
 }
+/* #main-project h3 {
+  display: flex;
+  text-align: center;
+} */
 
 #example1, #example2, #example3, #example4 {
   display: flex;
   flex-direction: column;
   height: 200px;
-  width: 50%;
-  
+  width: 25%;
+}
+main div ul h3 {
+  color: var(--white);
+background-color: var(--headers);
 }
 
-main content h3 {
+main content ul li h3 {
 font: size 20px;
 text-align: center;
 padding: 15px;
 color: var(--white);
-background-color: var(--purple);
+background-color: var(--headers);
 }
 
 footer {
   
-  background-color: var(--purple);
+  background-color: var(--headers);
   color: var(--white);
   text-align: center;
   padding-top: 15px;
@@ -124,4 +160,5 @@ footer content ul li {
   flex-direction: column;
   font-size: 15px;
   padding: 15px;
+  margin-left: 25px;
 }
