@@ -17,17 +17,23 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: var(--black)
 }
 
-h1 {
+body header #my-name {
   font-size: 2.5rem;
   margin-bottom: 10px;
 }
 
 
-header {
+body header.header {
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 1600px;
+  width: auto;
   padding: 40px;
+  
   background: var(--headers);
   color: var(--white);
 
@@ -47,9 +53,11 @@ header div ul {
   display: inline-block;
   margin-left: 25px;
 }
+
 #banner {
   height: 420px;
-  width: 100%;
+  max-width: 1600px;
+  width: auto;
   margin-bottom: 25px;
   background-image: url("../images/pxfuel.jpg");
   background-size: cover;
@@ -58,18 +66,22 @@ header div ul {
 
 #banner div {
  display:flex ;
- flex-wrap: wrap;
  flex-direction: row;
- align-items: flex-start;
+ align-items: center;
+ margin-top: 5%;
 }
 
-#banner div img {}
+body #banner div img {
+  max-width: 30%;
+  margin:60px 0 0 110px;
+  
+}
 
 body #banner div hgroup {
  display: flex;
- float: right;
  flex-direction: column;
- margin: 5% 5% 0 35%;
+ max-width: 70%;
+ margin: 5% 5% 0 15%;
 
 }
 
@@ -90,9 +102,7 @@ main {
   justify-content: center;
   align-items: center;
   width: 80%;
-}
-main content {
-  
+  margin-bottom: 300px;
 }
 
 main content ul {
@@ -106,7 +116,7 @@ main content ul li {
   margin-right: 100px;
 }
 
-main ul li p {
+main ul li img {
   height: 200px;
   width: 100;
   background-color: var(--current);
