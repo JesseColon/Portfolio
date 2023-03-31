@@ -95,6 +95,9 @@ body #banner div hgroup {
   color: var(--white);
 
 }
+
+/* Main body section */
+
 main {
   display: flex;
   flex-direction: column;
@@ -151,6 +154,8 @@ color: var(--white);
 background-color: var(--headers);
 }
 
+/* footer section */
+
 footer {
   
   background-color: var(--headers);
@@ -175,6 +180,9 @@ footer content div ul li {
   padding: 15px;
   
 }
+
+/* attempted to add @media function. needs work */
+
 @media screen and (max-width:900px) {
   main content ul .example {
     max-width: 50%;
